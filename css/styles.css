@@ -1,0 +1,53 @@
+
+/*
+Bryan Sevilla
+date:9/28/2025
+assignment: styles for project 2: Photo Gallery
+*/
+
+body{
+    background-color:#DDF4E7;
+header {
+  border: 5px solid;
+  display:flex;
+}
+.logo {
+  margin-right: 10px;
+}
+h1 {
+  color:#124170;
+  font-family:Arial, Helvetica, sans-serif
+}
+nav { 
+  background-color:#67C090 ;
+}
+.site-nav > ul {
+  display:flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.site-nav a {
+  color:#124170;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+img {
+  display:block;
+  border: 1px solid;
+  
+
+}
+main {
+    padding: 2%;
+    background-color:#26667F;
+    overflow: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#DDF4E7;
+}
+footer {
+   text-align: center;
+    font-size: 0.85em;
+    clear: left;
+    background-color:#67C090;
+    font-weight:lighter;
+}
