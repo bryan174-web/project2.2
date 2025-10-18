@@ -8,14 +8,12 @@ Date: 9/27/2025
   <title>Photo Gallery</title>
   <link rel="stylesheet" href="css/styles.css">
     <script src="js/script.js"></script>
-  
- 
-  </head>
+</head>
 <header>
+  
   <img class="logo" src="images/turtle11.jpg" alt="logo">
   <h1>Sea Turtles</h1>
 </header>
-
 <nav class="site-nav">
   <ul>
     <li><a href="#">Home</a></li>
@@ -26,15 +24,29 @@ Date: 9/27/2025
   </ul>
 
 </nav>
+<div class="slides">
+<!--I don't know what integrity is, but the gallery wont work without it--> 
+ <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="  
+  crossorigin="anonymous"></script>
+</div>
+<div id="myGallery">
+  <!--Transition effect between slides and autoplay-->
+  <img src="images/turtle8.jpg" class="active" alt="sturtle" >
+  <img src="images/turtle7.jpg" alt="t7" >
+  <img src="images/turtle6.jpg" alt="t6" >
  
-  
- <!--I want all my images to be the same size.-->  
+  <img src="images/turtle10.jpg" alt="t10">
+  <img src="images/turtle4.jpg" alt="t4" >
+  <img src="images/turtle12.jpg" alt="t12">
+  <img src="images/turtle13.jpg" alt="t13">
 
-  <img src="images/turtle1.jpg" id="myImg" width="400" alt="sea turtles" >
-  <button onclick="run()" >Next Image</button>
-<!--I'm having trouble making a transition on the images.-->
 
-  <main>
+</div>
+<button onclick="run()">previous</button>
+<button onclick="run()">next</button>
+ <main>
     <h2> General Information</h2>
     <P>  Sea turtles (superfamily Chelonioidea), sometimes called marine turtles, are reptiles of 
       the order Testudines and of the suborder Cryptodira. The seven existing species of sea
@@ -52,17 +64,26 @@ Date: 9/27/2025
      A study conducted on this topic shows that body size is positively correlated with speed, so 
      larger baby sea turtles are exposed to predators for a shorter amount of time.</p>
   </main>
-  <!--I went to a few websites to find info on sea turtles.-->
   
-<footer>
+    <!--slide control button-->
+    <img src="images/turtle1.jpg" id="myImg" width="500" alt="sea turtles" >
+  <button onclick="run()" >Next Image</button>
+
+ 
+  <section>
+  <figure>
+   
+    <!--Image caption-->
+  <img src="images/turtle9.jpg" alt="image of turtle" width="275" > 
+  <figcaption> SEA TURTLE</figcaption>
+  </figure>
+ <h2>Marine Turtles</h2>
+
+  <!--I went to a few websites to find info on sea turtles.-->
+  </section>
+  <footer>
   <p>"This fictitious website was created as an academic exercise for the Diablo Valley College 
     course, ARTDM-174:Web Design with JavaScript. In no way should this content be considered or used as a source
      of factual public information."</p>
 </footer>
-    
-  
-
-</body>
 </html>
-
- 
